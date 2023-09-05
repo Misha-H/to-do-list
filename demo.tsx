@@ -13,9 +13,9 @@ function FormGroup(props: FormGroupProps) {
   const { value } = props;
 
   return (
-    <div className='form-group'>
+    <div className="form-group">
       <label htmlFor={value}>{value}</label>
-      <input type='text' name={value} id={value} />
+      <input type="text" name={value} id={value} />
     </div>
   );
 }
@@ -27,11 +27,11 @@ function FormGroup(props: FormGroupProps) {
 function Form() {
   return (
     <form>
-      <FormGroup value='1' />
+      <FormGroup value="1" />
 
-      <FormGroup value='2' />
+      <FormGroup value="2" />
 
-      <FormGroup value='3' />
+      <FormGroup value="3" />
     </form>
   );
 }
