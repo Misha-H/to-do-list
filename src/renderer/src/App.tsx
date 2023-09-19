@@ -1,14 +1,17 @@
 import { Searchbar, TaskGroup } from './components';
+import { DataContextProvider } from './context';
 
 function App(): JSX.Element {
   return (
-    <div className="app">
-      <h1>Reminders</h1>
+    <DataContextProvider>
+      <div className='app'>
+        <h1>Reminders</h1>
 
-      <Searchbar />
+        <Searchbar />
 
-      <TaskGroup />
-    </div>
+        <TaskGroup />
+      </div>
+    </DataContextProvider>
   );
 }
 

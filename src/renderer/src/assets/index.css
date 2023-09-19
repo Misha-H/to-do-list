@@ -7,10 +7,10 @@ body {
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
-    "Helvetica Neue",
-    "Segoe UI",
-    "Ubuntu",
-    "Open Sans",
+    'Helvetica Neue',
+    'Segoe UI',
+    'Ubuntu',
+    'Open Sans',
     sans-serif;
 }
 
@@ -20,19 +20,38 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-
 .searchbar {
   border-radius: 0.3125rem;
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* 
+ * Task Group
+ */
 .task-group {
-  border-radius: 0.3125rem;
-  background: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 /* .tasks {
 color of point #817C7C;
 color: #1E1E1E;
 } */
+.task-group .task {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-group .task > div {
+  display: flex;
+}
+
+.task-group .task > div > p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
