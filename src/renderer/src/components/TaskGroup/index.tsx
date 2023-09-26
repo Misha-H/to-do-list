@@ -9,7 +9,7 @@ export default function () {
 
   return (
     <div className='task-group'>
-      {data.map((task) => (
+      {data.filteredData.map((task) => (
         <Task key={task.id} task={task} />
       ))}
     </div>
