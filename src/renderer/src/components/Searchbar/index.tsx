@@ -2,7 +2,7 @@ import { useContext } from 'react';
 
 import { DataContext } from '../../context';
 
-import type { SyntheticEvent } from 'react';
+import type { FormEvent } from 'react';
 
 // TODO: Display all tasks (and subtasks) in a nice fashion - refer to Figma
 export default function () {
@@ -10,7 +10,7 @@ export default function () {
 
   // TODO: correct types
   // TODO: add function description
-  const handleSearch = (event: SyntheticEvent<HTMLInputElement>) => {
+  const handleSearch = (event: FormEvent<HTMLInputElement>) => {
     console.log(event.target.value);
     const search = event.target.value.slice();
     data.filter(search);
@@ -23,6 +23,7 @@ export default function () {
         type='text'
         name='searchbar'
         id='searchbar'
+        placeholder='🔍 search'
         onInput={handleSearch}
       />
     </div>

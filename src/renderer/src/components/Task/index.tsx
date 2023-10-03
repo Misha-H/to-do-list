@@ -31,13 +31,13 @@ export default function (props: Props) {
 
   return (
     <Accordion.Root type='single' className='accordion-root' collapsible>
-      <Accordion.Item value='item-1'>
+      <Accordion.Item value='item-1' className='accordion-item'>
         <Accordion.Header className='accordion-header'>
           <Accordion.Trigger className='accordion-trigger'>
             <div>
               {hasSubtasks && <ChevronDown className='accordion-chevron' />}
             </div>
-            <div>
+            <div className='subtask'>
               <span className='description'>{description}</span>
               <span className='date'>{formatDate(created_at)}</span>
             </div>
